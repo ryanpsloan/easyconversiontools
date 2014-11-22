@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Easy Conversion Tools - Online Conversion Tools and Calculators </title>
+    <meta name="google-site-verification" content="4hNiEF5YwxItXnoR1bmaLBuI5CPRjE0_WcQF3ICxvYQ" />
+    <meta name="robots" content="NOODP">
+    <meta name="description" content="Calculators that convert length/distance (in ft yd mi mm cm dm m dam hm km) weight/mass (oz lb T mg cg dg g dag hg kg MT)
+    from both English and Metric systems. Also, temperature conversion from celsius, kelvin and fahrenheit (C, K, F)">
+    <meta name="keywords" content="online, calculator, converter, metric, english, unit converter, distance, length, weight, mass, temperature, metric to english
+    converter, english to metric si converter, english to metric si conversion calculators, english to metric si converter, metric si to english conversion calculators,
+    distance conversion calculator, length conversion calculator, weight conversion calculator, mass conversion calculator, temperature conversion calculator,
+    (in ft yd mi mm cm dm m dam hm km), (oz lb T mg cg dg g dag hg kg MT), (C, K, F) ">
+    <!-- Google Analytics Content Experiment code 
+    <script>
+	function utmx_section(){}function utmx(){}(function(){var
+	k='92505002-0',d=document,l=d.location,c=d.cookie;
+	if(l.search.indexOf('utm_expid='+k)>0)return;
+	function f(n){if(c){var i=c.indexOf(n+'=');if(i>-1){var j=c.
+	indexOf(';',i);return escape(c.substring(i+n.length+1,j<0?c.
+	length:j))}}}var x=f('__utmx'),xx=f('__utmxx'),h=l.hash;d.write(
+	'<sc'+'ript src="'+'http'+(l.protocol=='https:'?'s://ssl':
+	'://www')+'.google-analytics.com/ga_exp.js?'+'utmxkey='+k+
+	'&utmx='+(x?x:'')+'&utmxx='+(xx?xx:'')+'&utmxtime='+new Date().
+	valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
+	'" type="text/javascript" charset="utf-8"><\/sc'+'ript>')})();
+    </script>
+    <script>
+	utmx('url','A/B');
+    </script>
+    <!-- End of Google Analytics Content Experiment code --
+    <script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-55771102-1', 'auto');
+	ga('send', 'pageview');
+    </script> -->
+    <style>
+        body {
+            background-color: #CC6600;
+        }
+        
+	h1 {
+            text-align: center;
+            border-radius: 5px;
+            border: 2px solid white;
+            color: white;
+            background-color: #CC3300;
+	    margin-left: auto;
+	    margin-right: auto;
+	    height: auto;
+	    width: auto;
+	    min-width: 290px;
+        }
+        
+        div {
+            height: auto;
+            width: auto;
+            position: static;
+            margin-left: auto;
+            margin-right: auto;
+            width: 23%;
+	    /*height: 48%; */
+        }
+        
+          
+        .center {
+            border-radius: 10px;
+            border: 5px solid black;
+            margin-top: 70px;
+            margin-bottom: 70px;
+            background-color:#CC3300;
+            height: 797px;
+            width: 365px;
+
+        }
+        
+        a { /*Three links inside li*/
+            color: #600000;
+            height: 30px;
+            width: 30px;
+            /*text-align: center;*/
+            /*border: 2px solid white;*/
+            /*margin: 15px 10px 15px 10px;*/
+            border-radius: 5px;
+            text-decoration: none;
+            
+            /*height: 100%; */
+            
+            
+        }
+	
+	#refDiv{
+            margin-top: 5px;
+            margin-bottom: 5px;
+            border: 2px solid white;
+            text-align: center;
+            font-weight: bolder;
+            font-size: 40px;
+            border-radius: 5px;
+            background-color: #CC3300;
+            width: 265px;
+            height: 34px;
+            padding: 10px 5px 20px 5px;
+            
+            
+        }
+        #calculator {
+            border-radius: 70px;
+            border: 1px groove black;
+            height: 50px;
+            width: 50px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 12px;
+            
+        }
+        
+        h2 {
+            height: auto;
+            width: auto;
+            margin: 10px 0px 10px 0px;
+            text-align: center;
+            
+        }
+        .optimization {
+            visibility: hidden;
+	    font-size: 1px;
+        }
+        .button{
+            border: 2px solid white;
+            width: 182px;/*50%; /*sets div size */
+            border-radius: 20px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        .button:hover {
+            border: 2px groove black;
+            background-color: #CC9900;
+            color: orange;
+            
+        }
+        .button:active {
+            background-color: #993300;
+            border-color: #CC9900;
+        }
+        .button:hover p {
+            color: black;
+        }
+	.button:hover img {
+	    border-bottom: 2px solid black;
+	}
+        .img:hover{
+            
+        }
+        .img:active {
+            opacity: 0.4;
+            filter: alpha(opacity=40); /* msie */
+            /*content:url("Images/checkmark.jpg");*/
+            
+        }
+        img {
+            height:130px;
+            width: 182px;
+            border-radius: 17px;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+	    padding-top: 0px;
+	    padding-left: 0px;
+	    padding-right: 0px;
+	    border: 0px solid white;
+            
+        }
+        p {
+            text-align:center;
+            color: white;
+            display: block;
+        }
+        
+            
+        
+    </style>
+</head>
+
+<body>
+    <h1><strong>EasyConversionTools.com</strong></h1>
+    <div class="center" style="border: 2px solid white">
+        <img id="calculator" src="Images/calculatorimg0001.jpg"/>
+        
+        <p></p>
+        <p style="font-size: 25px; font-weight: bold;">Calculators</p>
+        
+        <hr>
+        <a href="Distance/distance-converter.html">
+            <div class="button">
+                <img class="img" src="Images/close-up-of-tape-measure.jpg" alt="Metric Distance Unit Converter"/>
+                <p>Distance/Length</p>
+            </div>
+        </a>
+        
+        <a href="Mass/mass-converter.html">
+            <div class="button">
+                <img class="img" src="Images/weighing-scales-002-jpg.jpg" alt="Metric Weight Unit Converter"/>
+                <p>Mass/Weight</p>
+            </div>
+        </a>
+        
+        <a href="Temperature/temperature-converter.html">
+            <div class="button">
+                <img class="img" src="Images/thermometer.jpg" alt="Temperature Unit Converter"/>
+                <p>Temperature</p>
+            </div>
+        </a>
+        
+    </div>
+    <a href="Reference/reference.html"><div id="refDiv" class="button"> Reference </div></a>
+    <div style="text-align: center; width: 250px;"><p>&copy; Copyright Gold Asterisk 2014 </p></div>
+    <div class="optimization"><h1>Online Conversion Calculators</h1>
+        Easy conversion tools provides quick and simple easy to use online converters to convert length (distance), weight (mass)
+	from both english and metric(SI) units. It also includes a converter that will convert temperature measurements between Kelvin,
+	Celsius, and Fahrenheit.
+	<h2>online metric distance and length converter (conversion tools and calculator)</h2>
+        Metric (SI) to english and english to metric (SI) conversion of distance (length).
+	<h2>online metric weight and mass converter(conversion tools and calculator)</h2>
+	Metric (SI) to english and english to metric (SI) conversion of weight (mass).
+	<h2>online temperature converter (conversion tool and calculator)</h2>
+	Online calculator that converts Kelvin, Celsius and Fahrenheit.
+	<h2>References - Distance Chart, Weight Chart, Temperature Chart, and Metric Chart</h2>
+	Site includes reference charts for distance (length), weight(mass), temperature and the metric system.
+        Calculators round to four significant digits, four decimal places.
+	Basic unit conversion performed by online calculators.
+	metric calculators that convert length and distance (in ft yd mi mm cm dm m dam hm km)
+	weight and mass (oz lb T mg cg dg g dag hg kg MT) from both English and Metric (SI) systems.
+	Along with a temperature conversion calculator from celsius, kelvin and fahrenheit(C, K, F).
+    </div>
+    <div class="optimization">
+    ounces	oz,			
+    pounds	lb,			
+    tons (tonnes)	T,			
+    milligrams	mg,			
+    centigrams	cg,			
+    decigrams	dg,			
+    grams	g	,		
+    dekagrams(decagrams)	dag,			
+    hectograms	hg,			
+    kilograms	kg,			
+    metric tons (tonnes)	MT,			
+    <h1> Weight (Mass) </h1>				
+    ounces	oz	to	pounds	lb,
+    ounces	oz	to	tons (tonnes)	T,
+    ounces	oz	to	milligrams	mg,
+    ounces	oz	to	centigrams	cg,
+    ounces	oz	to	decigrams	dg,
+    ounces	oz	to	grams	g,
+    ounces	oz	to	dekagrams(decagrams)	dag,
+    ounces	oz	to	hectograms	hg,
+    ounces	oz	to	kilograms	kg,
+    ounces	oz	to	metric tons (tonnes)	MT,
+				
+    pounds	lb	to	ounces	oz,
+    pounds	lb	to	tons (tonnes)	T,
+    pounds	lb	to	milligrams	mg,
+    pounds	lb	to	centigrams	cg,
+    pounds	lb	to	decigrams	dg,
+    pounds	lb	to	grams	g,
+    pounds	lb	to	dekagrams(decagrams)	dag,
+    pounds	lb	to	hectograms	hg,
+    pounds	lb	to	kilograms	kg,
+    pounds	lb	to	metric tons (tonnes)	MT,
+				
+    tons (tonnes)	T	to	milligrams	mg,
+    tons (tonnes)	T	to	centigrams	cg,
+    tons (tonnes)	T	to	decigrams	dg,
+    tons (tonnes)	T	to	grams	g,
+    tons (tonnes)	T	to	dekagrams(decagrams)	dag,
+    tons (tonnes)	T	to	hectograms	hg,
+    tons (tonnes)	T	to	kilograms	kg,
+    tons (tonnes)	T	to	metric tons (tonnes)	MT,
+    tons (tonnes)	T	to	ounces	oz,
+    tons (tonnes)	T	to	pounds	lb,
+				
+    milligrams	mg	to	centigrams	cg,
+    milligrams	mg	to	decigrams	dg,
+    milligrams	mg	to	grams	g,
+    milligrams	mg	to	dekagrams(decagrams)	dag,
+    milligrams	mg	to	hectograms	hg,
+    milligrams	mg	to	kilograms	kg,
+    milligrams	mg	to	metric tons (tonnes)	MT,
+    milligrams	mg	to	ounces	oz,
+    milligrams	mg	to	pounds	lb,
+    milligrams	mg	to	tons (tonnes)	T,
+				
+    centigrams	cg	to	decigrams	dg,
+    centigrams	cg	to	grams	g,
+    centigrams	cg	to	dekagrams(decagrams)	dag,
+    centigrams	cg	to	hectograms	hg,
+    centigrams	cg	to	kilograms	kg,
+    centigrams	cg	to	metric tons (tonnes)	MT,
+    centigrams	cg	to	ounces	oz,
+    centigrams	cg	to	pounds	lb,
+    centigrams	cg	to	tons (tonnes)	T,
+    centigrams	cg	to	milligrams	mg,
+    				
+    decigrams	dg	to	grams	g,
+    decigrams	dg	to	dekagrams(decagrams)	dag,
+    decigrams	dg	to	hectograms	hg,
+    decigrams	dg	to	kilograms	kg,
+    decigrams	dg	to	metric tons (tonnes)	MT,
+    decigrams	dg	to	ounces	oz,
+    decigrams	dg	to	pounds	lb,
+    decigrams	dg	to	tons (tonnes)	T,
+    decigrams	dg	to	milligrams	mg,
+    decigrams	dg	to	centigrams	cg,
+				
+    grams	g	to	dekagrams(decagrams)	dag,
+    grams	g	to	hectograms	hg,
+    grams	g	to	kilograms	kg,
+    grams	g	to	metric tons (tonnes)	MT,
+    grams	g	to	ounces	oz,
+    grams	g	to	pounds	lb,
+    grams	g	to	tons (tonnes)	T,
+    grams	g	to	milligrams	mg,
+    grams	g	to	centigrams	cg,
+    grams	g	to	decigrams	dg,
+				
+    dekagrams(decagrams)	dag	to	hectograms	hg,
+    dekagrams(decagrams)	dag	to	kilograms	kg,
+    dekagrams(decagrams)	dag	to	metric tons (tonnes)	MT,
+    dekagrams(decagrams)	dag	to	ounces	oz,
+    dekagrams(decagrams)	dag	to	pounds	lb,
+    dekagrams(decagrams)	dag	to	tons (tonnes)	T,
+    dekagrams(decagrams)	dag	to	milligrams	mg,
+    dekagrams(decagrams)	dag	to	centigrams	cg,
+    dekagrams(decagrams)	dag	to	decigrams	dg,
+    dekagrams(decagrams)	dag	to	grams	g,
+				
+    hectograms	hg	to	kilograms	kg,
+    hectograms	hg	to	metric tons (tonnes)	MT,
+    hectograms	hg	to	ounces	oz,
+    hectograms	hg	to	pounds	lb,
+    hectograms	hg	to	tons (tonnes)	T,
+    hectograms	hg	to	milligrams	mg,
+    hectograms	hg	to	centigrams	cg,
+    hectograms	hg	to	decigrams	dg,
+    hectograms	hg	to	grams	g,
+    hectograms	hg	to	dekagrams(decagrams)	dag,
+				
+    kilograms	kg	to	metric tons (tonnes)	MT,
+    kilograms	kg	to	ounces	oz,
+    kilograms	kg	to	pounds	lb,
+    kilograms	kg	to	tons (tonnes)	T,
+    kilograms	kg	to	milligrams	mg,
+    kilograms	kg	to	centigrams	cg,
+    kilograms	kg	to	decigrams	dg,
+    kilograms	kg	to	grams	g,
+    kilograms	kg	to	dekagrams(decagrams)	dag,
+    kilograms	kg	to	hectograms	hg,
+				
+    metric tons (tonnes)	MT	to	ounces	oz,
+    metric tons (tonnes)	MT	to	pounds	lb,
+    metric tons (tonnes)	MT	to	tons (tonnes)	T,
+    metric tons (tonnes)	MT	to	milligrams	mg,
+    metric tons (tonnes)	MT	to	centigrams	cg,
+    metric tons (tonnes)	MT	to	decigrams	dg,
+    metric tons (tonnes)	MT	to	grams	g,
+    metric tons (tonnes)	MT	to	dekagrams(decagrams)	dag,
+    metric tons (tonnes)	MT	to	hectograms	hg,
+    metric tons (tonnes)	MT	to	kilograms	kg,
+    <h1> Distance (Length) </h1>
+    inches	in	to	feet	ft,
+    inches	in	to	yards	yd,
+    inches	in	to	miles	mi,
+    inches	in	to	millimeters	mm,
+    inches	in	to	centimeter	cm,
+    inches	in	to	decimeter	dm,
+    inches	in	to	meters	m,
+    inches	in	to	dekameters (decameters)	dam,
+    inches	in	to	hectometers	hm,
+    inches	in	to	kilometers	km,
+				
+    feet	ft	to	yards	yd,
+    feet	ft	to	miles	mi,
+    feet	ft	to	millimeters	mm,
+    feet	ft	to	centimeter	cm,
+    feet	ft	to	decimeter	dm,
+    feet	ft	to	meters	m,
+    feet	ft	to	dekameters (decameters)	dam,
+    feet	ft	to	hectometers	hm,
+    feet	ft	to	kilometers	km,
+    feet	ft	to	inches	in,
+				
+    yards	yd	to	miles	mi,,
+    yards	yd	to	millimeters	mm,
+    yards	yd	to	centimeter	cm,
+    yards	yd	to	decimeter	dm,
+    yards	yd	to	meters	m,
+    yards	yd	to	dekameters (decameters)	dam,
+    yards	yd	to	hectometers	hm,
+    yards	yd	to	kilometers	km,
+    yards	yd	to	inches	in,
+    yards	yd	to	feet	ft,
+				
+    miles	mi	to	millimeters	mm,
+    miles	mi	to	centimeter	cm,
+    miles	mi	to	decimeter	dm,
+    miles	mi	to	meters	m,
+    miles	mi	to	dekameters (decameters)	dam,
+    miles	mi	to	hectometers	hm,
+    miles	mi	to	kilometers	km,
+    miles	mi	to	inches	in,
+    miles	mi	to	feet	ft,
+    miles	mi	to	yards	yd,
+				
+    millimeters	mm	to	centimeter	cm,
+    millimeters	mm	to	decimeter	dm,
+    millimeters	mm	to	meters	m,
+    millimeters	mm	to	dekameters (decameters)	dam,
+    millimeters	mm	to	hectometers	hm,
+    millimeters	mm	to	kilometers	km,
+    millimeters	mm	to	inches	in,
+    millimeters	mm	to	feet	ft,
+    millimeters	mm	to	yards	yd,
+    millimeters	mm	to	miles	mi,
+				
+    centimeter	cm	to	decimeter	dm,
+    centimeter	cm	to	meters	m,
+    centimeter	cm	to	dekameters (decameters)	dam,
+    centimeter	cm	to	hectometers	hm,
+    centimeter	cm	to	kilometers	km,
+    centimeter	cm	to	inches	in,
+    centimeter	cm	to	feet	ft,
+    centimeter	cm	to	yards	yd,
+    centimeter	cm	to	miles	mi,
+    centimeter	cm	to	millimeters	mm,
+				
+    decimeter	dm	to	meters	m,
+    decimeter	dm	to	dekameters (decameters)	dam,
+    decimeter	dm	to	hectometers	hm,
+    decimeter	dm	to	kilometers	km,
+    decimeter	dm	to	inches	in,
+    decimeter	dm	to	feet	ft,
+    decimeter	dm	to	yards	yd,
+    decimeter	dm	to	miles	mi,
+    decimeter	dm	to	millimeters	mm,
+    decimeter	dm	to	centimeter	cm,
+				
+    meters	m	to	dekameters (decameters)	dam,
+    meters	m	to	hectometers	hm,
+    meters	m	to	kilometers	km,
+    meters	m	to	inches	in,
+    meters	m	to	feet	ft,
+    meters	m	to	yards	yd,
+    meters	m	to	miles	mi,
+    meters	m	to	millimeters	mm,
+    meters	m	to	centimeter	cm,
+    meters	m	to	decimeter	dm,
+				
+    dekameters (decameters)	dam	to	hectometers	hm,
+    dekameters (decameters)	dam	to	kilometers	km,
+    dekameters (decameters)	dam	to	inches	in,
+    dekameters (decameters)	dam	to	feet	ft,
+    dekameters (decameters)	dam	to	yards	yd,
+    dekameters (decameters)	dam	to	miles	mi,
+    dekameters (decameters)	dam	to	millimeters	mm,
+    dekameters (decameters)	dam	to	centimeter	cm,
+    dekameters (decameters)	dam	to	decimeter	dm,
+    dekameters (decameters)	dam	to	meters	m,
+				
+    hectometers	hm	to	kilometers	km,
+    hectometers	hm	to	inches	in,
+    hectometers	hm	to	feet	ft,
+    hectometers	hm	to	yards	yd,
+    hectometers	hm	to	miles	mi,
+    hectometers	hm	to	millimeters	mm,
+    hectometers	hm	to	centimeter	cm,
+    hectometers	hm	to	decimeter	dm,
+    hectometers	hm	to	meters	m,
+    hectometers	hm	to	dekameters (decameters)	dam,
+				
+    kilometers	km	to	inches	in,
+    kilometers	km	to	feet	ft,
+    kilometers	km	to	yards	yd,
+    kilometers	km	to	miles	mi,
+    kilometers	km	to	millimeters	mm,
+    kilometers	km	to	centimeter	cm,
+    kilometers	km	to	decimeter	dm,
+    kilometers	km	to	meters	m,
+    kilometers	km	to	dekameters (decameters)	dam,
+    kilometers	km	to	hectometers	hm,
+    <h1>Temperature</h1>
+    fahrenheit	F	to	celsius	C,
+    fahrenheit	F	to	kelvin	K,
+				
+    celsius	C	to	fahrenheit	F,
+    celsius	C	to	kelvin	K,
+    				
+    kelvin	K	to	fahrenheit	F,
+    kelvin	K	to	celsius	C"
+    </div>
+ 
+
+ 
+
+</body>
+</html>

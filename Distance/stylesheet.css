@@ -1,0 +1,142 @@
+
+body {
+    background-color: #808000;
+}
+
+h1 {
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid white;
+    background-color: #333300;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    width: auto;
+    min-width: 290px
+    
+}
+
+textarea {
+    width: 280px;
+    height: 35px;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    font-size: 25px;
+    font-weight: bold;
+    resize: none;
+    text-align: center;
+}
+
+select {
+    width: auto;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 100px; 
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+div {
+    height: auto;
+    width: auto;
+    position: static;
+}
+
+.center {
+    border-radius: 5px;
+    border: 2px solid white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 23%;
+    background-color:#333300;
+    height: 300px;
+    width: 310px;
+}
+
+#button {
+    border: 2px solid white;
+    margin-top: 15px;
+    margin-left: 10px;
+    font-size: 20px;
+    background-color: #808000;
+    height: 50px;
+    width: 285px;
+    
+}
+
+#button:hover{
+    color: green;
+    background-color: #CC9900;
+    border-color: #993300;
+}
+
+#button:active{
+    color: red;
+    background-color: #993300;
+    border-color: #FF0000;
+}
+
+#heading{
+    margin-left: auto;
+    margin-right: auto;
+    width: 23%;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    width: 310px;
+    height: 100px;
+}
+
+#notation{
+    width: 310px;
+    height: 15px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 12px;
+}
+
+#copyright{
+    text-align: center;
+    font-size: 12px;
+    
+}
+
+#menu{
+    text-align: center;
+    margin-top: 44px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 410px;
+    height: 55px;
+}
+
+
+
+a {
+    color: #00FF00;
+    
+    
+}
+
+strong {
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;  
+}
+
+li {
+    display: inline-block;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+
