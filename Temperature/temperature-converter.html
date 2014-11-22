@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Temperature Conversion Calculator</title>
+    <meta name="description=" content="Celsius, Fahrenheit and Kelvin Temperature Easy Online Conversion Calculator">
+    <meta name="keywords" content="Kelvin K, Celsius C, Fahrenheit F, Unit Conversion, Online Calculator, Temperature Calculator">
+    <meta name="author" content="Gold Asterisk">
+    <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+    <style type="text/css">
+       #home:link {color: black;}      /* unvisited link */
+       #home:visited {color: black;}   /* visited link */
+       #home:hover {color: black;}     /* mouse over link */
+       #home:active {color: black;}    /* selected link */
+       #home{text-decoration: none;}
+    </style>
+    <script type="text/javascript" src="temperature.js"></script>
+    <script type="text/javascript">
+        
+    function execute() {
+        var trim, input, nan, x, selA, y, selB, convObj, answer, output;
+        trim = document.getElementById('input').value;
+        //alert("var trim = " + trim);
+        trim = trim.replace(/[^0-9\.]/gmi, "");    
+        //alert("trim.replace = " + trim);    
+        input = parseFloat(trim);
+        //alert("after parseFloat var input = " + input);
+        nan = isNaN(input);
+        //alert("nan = " + nan);
+        if (nan) {
+            document.getElementById('output').innerHTML = "Not a Valid Entry"
+            document.getElementById('input').value = "";
+        }
+        else {
+            x = document.getElementById('selectA').selectedIndex;
+            selA = document.getElementsByTagName('option')[x].value;
+            //alert("var selA = " + selA);
+            y = document.getElementById('selectB').selectedIndex;
+            selB = document.getElementsByTagName('option')[y].value;
+            //alert("var selB = " + selB);
+            convObj = new Conversion(input, selA, selB); 
+            answer = convObj.convert(); 
+            //alert("answer = " + answer);
+            document.getElementById("output").innerHTML = answer;
+            
+        }    
+    }
+        
+    </script>
+    <title>Easy Conversion Tools</title>
+</head>
+<body>
+<h1><a id="home" href="../home.html"><strong>EasyConversionTools.com</strong></a></h1>
+<div id="heading"> <p> Temperature </p> </div>
+<div id="notation"> <p> US Decimal Notation </p> </div>
+<div class="center">
+    <div>
+        <textarea name="input" id="input" cols="25" rows="1" maxlength="40" required="true" placeholder="0,000.00"></textarea>
+        
+        <select name="selectA" id="selectA">
+            <option value="fahrenheit" selected>Fahrenheit&deg;</option>
+            <option value="celsius">Celsius&deg;</option>
+            <option value="kelvin">Kelvin</option>
+        </select>
+        <hr>
+    </div>
+    <div>
+        <select id="selectB" name="selectB" required="true">
+            <option value="fahrenheit">Fahrenheit&deg;</option>
+            <option value="celsius"selected>Celsius&deg;</option>
+            <option value="kelvin">Kelvin</option>
+        </select>
+    </div>
+    <div>
+        <button id="button" onclick="execute()">Convert</button>
+        <textarea id="output" name="output" cols="25" rows="1" readonly="true"></textarea>
+    </div>
+       
+</div>
+<div id="menu">
+    <ul>
+        <li><a href="../home.html">Home</a></li>
+        <li><a href="../Mass/mass-converter.html">Mass / Weight</a></li>
+        <li><a href="../Distance/distance-converter.html">Distance / Length</a></li>
+        <li><a href="../Reference/reference.html">Reference</a></li>
+    </ul>
+</div>
+<div id="copyright"><p>&copy; Copyright Gold Asterisk 2014 </p></div>
+</body>
+</html>
